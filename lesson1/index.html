@@ -8,15 +8,15 @@
     <header> 
       <h1 align="middle"> Front-end курсы</h1>
       <p align="middle"><img src="images/html5.png" width="150" height="170" alt=""></img></p>   
-    </header>
-	<nav>
+	  <nav>
       <p> <ul>
         <li><a href="pages/html.html" target="_blank" >Курсы HTML</a></li>
         <li><a href="pages/css.html" target="_blank">Курсы CSS</a></li>
         <li><a href="pages/javascript.html" target="_blank">Курсы JavaScrpit</a></li>
       </ul> </p>
 	</nav>
-    <article>
+    </header>
+	<article>
       <p> 
 HTML (от англ. <i>HyperText Markup Language</i> - язык "гипертекстовой разметки") - стандартизированный язык разметки
 документов во <strike>вселенной</strike> <u>Всемирной паутине</u>. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык
@@ -30,15 +30,15 @@ CSS (от англ. <b>Cascading Style Sheets</b> - каскадные табл�
 	  <p align="right">JavaScript рассмотрим позже</p>
 	  <h2>Eще можно изучить</h2>
 	  <p align="middle">PHP|SQL|Java</p>
+	</article>
 	  <h2>Форма регистрации</h2>
-      <div>
         <form action="page.html">
-          <p>Ваше имя: <input type="text" name="name" placeholder="Введите имя"></p> 
-          <p>Ваша фамилия: <input type="text" name="surname" placeholder="Введите фамилию"></p> 
-          <p>Кто Вы: мужчина<input type="radio" name="sex" value="m"> 
-		     женщина<input type="radio" name="sex" value="w"></p> 
+          <p><label>Ваше имя: <input type="text" name="name" placeholder="Введите имя" autofocus required></label></p>
+          <p><label>Ваша фамилия: <input type="text" name="surname" placeholder="Введите фамилию" required></label></p> 
+          <p>Кто Вы: <label>мужчина<input type="radio" name="sex" value="m" required></label> 
+		     <label>женщина<input type="radio" name="sex" value="w"></label></p> 
 		  <p>Выбрать курсы 
-		    <select name="Course[]">
+			<select name="Course[]">
               <option value="HTML">HTML</option>
 			  <option value="CSS">CSS</option>
 			  <option value="JavaScript">JavaScript</option>
@@ -46,9 +46,7 @@ CSS (от англ. <b>Cascading Style Sheets</b> - каскадные табл�
 		  </p>
 		  <p><textarea cols="40" rows="10" placeholder="Доп. информация"></textarea></p>
 		  <button type="submit">Отправить</button>
-		  <button type="reset">Сбросить</button>		  
+		  <button type="reset">Сбросить</button>	  
         </form>
-      </div>
-    </article>
   </body>
 </html>
